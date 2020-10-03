@@ -1,1 +1,21 @@
-# SpaceAppsDU
+# Hey! What Are You Looking At? 
+
+Humans have been turning their gaze skyward in the search for answers since the very beginning of time and telescopes have been helping them get a better picture when they do for hundreds of years. We now have both ground-based and space-based telescopes that are able to give us terabytes and terabytes of data that provide us with invaluable information regarding the formation of the universe, the stars, the planets and so much more. One such repository of this type of information is the High Energy Astrophysics Science Archive Research Center (HEASARC). This is the primary archive for NASA's (and other space agencies') missions studying electromagnetic radiation from extremely energetic cosmic phenomena. Another potential source of good information is the Canadian Astronomy Data Center (CADC), an archive containing the data products of more than a dozen different telescopes.
+
+HEASARC data are especially relevant to many exciting astronomical events because they allow scientists to recover the history of the source leading up to the event. For example, when the Laser Interferometer Gravitational Observatory (LIGO) detects a gravitational wave event, scientists need to know what the source looked like and how it was behaving hours or days before and after the event. Supernovae and gamma ray bursts are examples of other events where the past history of the source offers important clues. In these cases, researchers need to quickly access all the available data on the source during some specific time range to learn as much as possible about the source and the phenomenon.
+
+The CADC contains data from a variety of different telescopes, both ground-based and orbiting. One that may be of particular interest is the Near-Earth Object Surveillance Satellite (NEOSSat). This microsatellite takes regular images of comets, asteroids and even exoplanet transits. A better understanding of comets and asteroids plays a fundamental role in our understanding of planetary and solar system formation. In addition, better knowledge of their orbits and trajectories helps reassure us that we’re not on a collision course anytime in the near future.
+
+While the HEASARC and CADC offer all the data and some powerful tools for scientists to access the information, your challenge is to make the appeal of the data broader and allow users easier and simpler access, for example via mobile or web interfaces. Can you help others understand the data by creating a visualization tool or other application that shows the positions in the sky that high energy missions are currently seeing, or which constellations near-Earth asteroids are crossing though? Can your tool also include ways to show what was observed in the past or for a given time range?
+
+Potential Considerations:
+
+How might you efficiently show what different missions have observed recently? You might decide to create a display on an interactive celestial sphere that marks the regions of the sky that are currently being observed by the many different orbiting satellites during some specified time range. How could you allow users to zoom in to see more?
+
+How might you allow the selection of different missions, coordinates with specified field-of-view zoom, and/or time ranges? These could be useful for learning what datasets exist for studying source behavior leading up to events like gravitational wave detections, gamma ray bursts, and supernovae.
+
+How might you display the sky map in different wavelengths, allowing users to select wavelengths? You may develop a web tool (i.e., browser) or mobile user interface. You should consider the ease of use. Existing sky visualization tools may serve as models, and freely available widgets may be used. But the end result should be simple, intuitive, and user-friendly.
+
+How many HEASARC missions is your tool able to include? You may also include other NASA missions (e.g., Spitzer, Hubble Space Telescope).
+
+For understanding the nature of energetic sources in our Universe, both spatial and temporal information is very important. Accessing the data as soon as possible to study fading or changing sources is crucial for learning the most about the objects.
