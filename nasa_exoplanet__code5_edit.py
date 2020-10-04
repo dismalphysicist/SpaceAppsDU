@@ -17,14 +17,14 @@ print(datetime_ET)
 df = pandas.read_csv("entireexoplanetdata.csv", sep=',')
 
 
-print(df['ra'])
+# print(df['ra'])
 df['ra']=df['ra']*(numpy.pi/180)-numpy.pi
 df['dec']=df['dec']*(numpy.pi/180)
-print(df['ra'])
+# print(df['ra'])
 
 ra=df['ra'].tolist()
 dec=df['dec'].tolist()
-print(ra)
+# print(ra)
 
 
 
@@ -33,7 +33,7 @@ print(ra)
 plt.style.use('dark_background')
 plt.figure(figsize=(12, 8))
 plt.subplot(projection="aitoff")
-plt.title('{datetime_utc} UTC', fontsize=10)
+plt.title('%s UTC' %datetime_utc, fontsize=10)
 plt.plot(0.5,0.3,marker='o')
 #put a variable called exoplanet_graph as the final plot 
 exoplanet_graph = plt.scatter(ra,dec)
@@ -46,7 +46,11 @@ plt.xticks(ticks=numpy.radians([-150, -120, -90, -60, -30, 0, \
 ###########################################################################
 
 def acc(name,ind): # access data 
-    return str(df[name][ind]) + "\n"
+    dat = str(df[name][ind])
+    if name!='pl_hostname' and dat=='nan': # probably a numerical field, test for nan
+        return "unknown\n"
+    else:
+        return dat + "\n"
 
 def f(sel):
     ind = sel.target.index 
@@ -62,8 +66,7 @@ cursors.cursor().connect(
 plt.xlabel('Right ascension in hours')
 plt.ylabel('Declination in deg.')
 
-# Create a legend and grid
-plt.legend()
+# Create a grid
 plt.grid(True)
 
 plt.show()
