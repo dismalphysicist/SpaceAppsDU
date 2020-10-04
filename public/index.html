@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 
 <body>
@@ -34,60 +35,53 @@
 
     <div class="container">
         <div class="row">
+            <h1>Get excited about Exoplanets!</h1>
+            <h4>Welcome to our exoplanet visualiser.</h4>
+
+            <br />
+            <p>
+                <b>Exoplanet</b> (n): a planet orbiting a star that is not our sun
+            </p>
+            <br />
+            <p>
+                We are a team of students at Durham University. Exoplanets are one of the most interesting 
+                and accessible topics in astrophysics, and have been immortalised in science fiction 
+                almost since the genre began. We aim to improve the appeal of data relating to the size, 
+                shape, composition and habitability of exoplanets to the wider public by introducing this 
+                visualiser tool. Visit the <a href="http://localhost:1337/data.html">data</a> page to view the 
+                visualiser. 
+            </p>
+        </div>
+            <br /><br />
+        <div class="row">
             <div class="col-md-4">
-                <!--Needs a recognisable grid layout-->
-                <h1>Durham University team</h1>
-
-                <br />
                 <p>
-                    First paragraph
+                    <b>RA/DEC coordinate system: </b>Just like we like to use coordinates to describe
+                    where a place is on Earth’s surface via longitude and latitude, astronomers use a
+                    coordinate system to describe where in the sky we see a cosmological object. Instead
+                    of longitude and latitude, astronomers use right ascension (ra) and declination
+                    (dec). Ra is the longitude of space, i.e. how far ‘east’ or ‘west’ the object
+                    appears. Dec is similar to latitude, i.e. how far up or down an exoplanet appears.
+                    See the diagram below for further visualization and clarification. Ra is measured
+                    in hours around a circle, with 180&deg; around the circle labelled as 12 hr, and 360&deg;
+                    labelled as 24 hours. Dec is measured in degrees from the equator.
                 </p>
-                <p>
-                    Second paragraph
-                </p>
-                <br />
-
-
-                <!--<form id="eventsearchform" action="http://localhost:1337">
-                    Find an event:<br>
-                    <input type="text" id="eventname">
-                    <button id="eventsubmitButton">Search</button> <br>
-                </form>-->
-
-                <!--<form id="eventsearchform">
-                    Find an event: <br />
-                    <div id="events_search"></div>
-                    <button id="eventsubmitButton">Search</button> <br>
-                </form>-->
-
-                <!--<div id="eventsearchresult"></div> <div id="eventsearchresultextended"> </div><br /><br />
--->
-                <!--Collapsible 'create an account' button and form-->
-                <!--<button data-toggle="collapse" data-target="#indexcreateaccount">Create an account</button> <br /><br />
-
-                <div id="indexcreateaccount" class="collapse">
-                    <form id="indexaddform" action="http://localhost:1337">
-                        Username: <input type="text" id="createaccountusername"> <br /> <br />
-                        Forename: <input type="text" id="createaccountforename"> <br /><br>
-                        Surname: <input type="text" id="createaccountsurname"> <br><br />
-                        Date of Birth: <input type="date" id="indexDoB" /> <br /> <br />
-                        Sex: M <input type="radio" name="index_sex" id="index_sexM" value="M" /> F <input type="radio" name="index_sex" id="index_sexF" value="F" /> <br /> <br />
-                        Disability? <input type="checkbox" id="indexaddPersonDisability" name="indexaddPersonDisability" value="d" /> <br /> <br />
-                        Password: <input type="text" id="password"> <br /> <br />
-                        <button id="createButton">Create</button>
-                        <br> <br>
-                    </form>
-                </div>
-
-                <div id="createdaccount"> </div><br /><br />-->
             </div>
-            <div class="col-md-8">
-                <img src="cat_astronaut.png" />
+            <div class="col-md-4">
+                <img src="Skycoordinates.jpg" width="240" alt="Graphic defining right ascension and declination" />
             </div>
+        </div>
+        <div class="row">
+            <ul>
+                References:
+                <li><a href="https://exoplanetarchive.ipac.caltech.edu/">https://exoplanetarchive.ipac.caltech.edu/</a></li>
+                <li><a href="https://astronomy.com/magazine/ask-astro/2013/07/sky-coordinates">https://astronomy.com/magazine/ask-astro/2013/07/sky-coordinates</a></li>
+                <li><a href="https://www.merriam-webster.com/dictionary/exoplanet">https://www.merriam-webster.com/dictionary/exoplanet</a></li>
+            </ul>
         </div>
     </div>
 
-    <script src="scripting.js"></script>
+    <script src="javascripts/JavaScript.js"></script>
 
 </body>
 </html> 

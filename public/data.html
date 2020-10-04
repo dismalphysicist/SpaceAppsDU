@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 
 <body>
@@ -35,13 +36,27 @@
     <div class="container">
         <div class="column">
             <div class="row-md-4">
-                <h1>Data page</h1>
+                <h1>Exoplanet Visualiser</h1>
             </div>
             <div class="row-md-4">
-                <p>test</p>
+                <br />
+                <p>
+                    <b>How it works: </b>Each dot on the following RA/DEC map is an exoplanet.
+                    Click on any exoplanet to get its name, mass (in Jupiter masses),
+                    distance from our solar system, and radius (in Jupiter radii). Astronomers often
+                    compare the radii and masses of exoplanets to Jupiter (e.g. A planet with 10 Jupiter
+                    masses has 10 times the mass of Jupiter) to aid mental comparison between exoplanets.
+                </p>
+                <p>
+                    Note: we have not managed to embed our interactive visualisation in a web interface 
+                    yet. Instead, below is a static image of the visualisation which you can hover 
+                    your mouse over to view a zoomed-in version. 
+                </p>
             </div>
-            <div class="row-md-4">
-                
+            <br />
+            <div class="img-zoom-container">
+                <img id="myimage" width="800" height="500" src="exoplanets-static.png" alt="Graph showing positions of exoplanets on the sky" />
+                <div id="myresult" class="img-zoom-result"></div>
             </div>
         </div>
     </div>
